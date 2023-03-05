@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    background-color: rgba(95, 100, 114, 1);
+}
+
+header img{
+    width: 152px;
+    height: 30px;
+    margin-left: 40px;
+    margin-top: 27px;
+}
+
+.burger, .search-bar input{
+    display: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.shipment-list-container{
+    width: 270px;
+}
+.shipment-list {
+    overflow-y: scroll;
+    height: 500px;
+}
+.shipment-list::-webkit-scrollbar {
+    width: 12px;
+} 
+.shipment-list::-webkit-scrollbar-track {
+    background: grey;
+}
+.shipment-list::-webkit-scrollbar-thumb {
+    background-color: rgb(180, 175, 175);
+    border-radius: 20px;
+    border: 3px solid grey;
+}
+
+.shipment-list li{
+    margin-bottom: 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 4px;
+
+}
+.shipment-list li:hover {
+    background: linear-gradient(90deg, rgba(45, 48, 56, 0) 22.92%, #2d30389a 100%);
+    color :#fff
+}
+
+.container{
+    width: 1000px;
+    height: 600px;
+    background: linear-gradient(124.01deg, #2D3038 0%, rgba(45, 48, 56, 0) 100%);
+    border-radius: 30px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+h2{
+    color: rgba(151, 151, 151, 1);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.shipment-name{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.shipment-email, ul li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #979797;
+}
+.cargo-boxes{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #979797;
+    margin-top: 30px;
+}
+.box{
+    width: 320px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+}
+h3{
+    color: rgba(151, 151, 151, 1);
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px;
+    margin-top: 30px;
+}
+.shipment-number{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 66px;
+    color: #fff;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .burger{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        cursor: pointer;
+    }
+    .burger-bar, .Xmark{
+        color: white;
+        font-size: 30px;
+    }
+    .block{
+        display: block;
+    }
+    .none, .shipment-list-container{
+        display: none;
+    }
+    .container{
+        width: 400px;
+    }
+    .shipment-name{
+        margin-top: -20px;
+        font-size: 24px;
+    }
+    .shipment-email{
+        font-size: 16px;
+    }
+    h3{
+        font-size: 22px;
+        margin-left: 20px;
+    }
+    .shipment-number{
+        font-size: 30px;
+        margin-left: 140px;
+    }
+    .search-bar input{
+        display: block;
+        border: none;
+        outline: none;
+        width: 85%;
+        height: 40px;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 30px auto;
+    }
+}

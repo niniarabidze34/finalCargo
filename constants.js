@@ -1,0 +1,9 @@
+export const shipmentList = document.getElementById('shipment-list')
+export const name = document.getElementById('shipment-name')
+export const email = document.getElementById("shipment-email")
+export const boxes = document.getElementById("box-quantity")
+export const boxNumber = document.getElementById("shipment-number")
+export const burgerBar = document.getElementById("burger-bar");
+export const Xmark = document.getElementById("Xmark")
+export const shipContainer =  document.getElementById("shipment-list-container")
+export const Container =  document.getElementById("container")

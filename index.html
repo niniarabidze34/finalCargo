@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer type="module" src="dist/dist.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="img/Logo.png" alt="">
+
+        <div class="burger" id="burger">
+            <div class="burger-bar block" id="burger-bar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="Xmark none" id="Xmark">
+                <i class="fa-solid fa-x"></i>
+            </div>
+        </div>
+           
+        
+        <div class="search-bar">
+            <input type="text" placeholder="search">
+        </div>
+    </header>
+    <main>
+        <div class="shipment-list-container" id="shipment-list-container">
+            <h2>Shipment List</h2>
+            <ul class="shipment-list" id="shipment-list"></ul>
+        </div>
+        
+        <div class="container" id="container">
+            <h1 id="shipment-name" class="shipment-name">name</h1>
+            <p id="shipment-email" class="shipment-email">email</p>
+            <p class="cargo-boxes">Cargo boxes</p>
+            <div class="box">
+                <p id="box-quantity"></p>
+            </div>
+            <h3>Number of required cargo bays</h3>
+            <p class="shipment-number" id="shipment-number"></p>
+        </div> 
+    </main>
+    <script src="https://kit.fontawesome.com/0f065fd346.js" crossorigin="anonymous"></script>
+</body>
+</html>
